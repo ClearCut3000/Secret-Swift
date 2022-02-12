@@ -5,6 +5,7 @@
 //  Created by Николай Никитин on 11.02.2022.
 //
 
+import LocalAuthentication
 import UIKit
 
 class ViewController: UIViewController {
@@ -59,7 +60,26 @@ class ViewController: UIViewController {
 
   //MARK: - Actions
   @IBAction func authenticateTapped(_ sender: Any) {
-    unlockSecretText()
+    let context = LAContext()
+    var error: NSError?
+    if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+      let reason = "Identify yourself!"
+      context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { [weak self] success, authenticationError in
+        DispatchQueue.main.async {
+          if success {
+            self?.unlockSecretText()
+          } else {
+            let alert = UIAlertController(title: "Authentication failed!", message: "You can't be verified. Pleastry again.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            self?.present(alert, animated: true)
+          }
+        }
+      }
+    } else {
+      let alert = UIAlertController(title: "Biometry unavailable!", message: "Your device is not configured for biometric authentication.", preferredStyle: .alert)
+      alert.addAction(UIAlertAction(title: "OK", style: .default))
+      present(alert, animated: true)
+    }
   }
 }
 

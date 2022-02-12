@@ -300,6 +300,7 @@
 				DEVELOPMENT_TEAM = CJ7JF497NG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Secret Swift/Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Identify yourself, please!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,6 +329,7 @@
 				DEVELOPMENT_TEAM = CJ7JF497NG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Secret Swift/Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Identify yourself, please!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
