@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360ECBE127B99891005D94D3 /* scr.gif in Resources */ = {isa = PBXBuildFile; fileRef = 360ECBE027B99891005D94D3 /* scr.gif */; };
 		36998C8E27B6CDE9001C201C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36998C8D27B6CDE9001C201C /* AppDelegate.swift */; };
 		36998C9027B6CDE9001C201C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36998C8F27B6CDE9001C201C /* SceneDelegate.swift */; };
 		36998C9227B6CDE9001C201C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36998C9127B6CDE9001C201C /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		360ECBE027B99891005D94D3 /* scr.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = scr.gif; sourceTree = "<group>"; };
 		36998C8A27B6CDE9001C201C /* Secret Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secret Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36998C8D27B6CDE9001C201C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36998C8F27B6CDE9001C201C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,9 +43,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		360ECBDF27B99883005D94D3 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				360ECBE027B99891005D94D3 /* scr.gif */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		36998C8127B6CDE9001C201C = {
 			isa = PBXGroup;
 			children = (
+				360ECBDF27B99883005D94D3 /* Screenshots */,
 				36998C8C27B6CDE9001C201C /* Secret Swift */,
 				36998C8B27B6CDE9001C201C /* Products */,
 			);
@@ -134,6 +145,7 @@
 				36998C9A27B6CDEE001C201C /* LaunchScreen.storyboard in Resources */,
 				36998C9727B6CDEE001C201C /* Assets.xcassets in Resources */,
 				36998C9527B6CDE9001C201C /* Main.storyboard in Resources */,
+				360ECBE127B99891005D94D3 /* scr.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
